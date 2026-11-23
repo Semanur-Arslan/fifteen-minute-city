@@ -44,6 +44,7 @@ No test runner is configured.
 
 - Before changing files, briefly explain the plan in Turkish and wait for approval on larger changes.
 - Work in small steps; one feature per commit.
+- Every new feature gets its own branch and is merged into `main` via a pull request; don't commit features directly to `main`.
 - Every utility function gets unit tests.
 - Code, comments, README and commit messages in English.
 - Never commit secrets; use .env.local.
