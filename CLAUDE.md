@@ -14,8 +14,11 @@ Freshly scaffolded with `create-next-app` (single initial commit). The only app 
 - `npm run build` — production build; also the main type-check gate (there is no separate `tsc` script).
 - `npm run start` — serve the production build.
 - `npm run lint` — ESLint 9 flat config (`eslint.config.mjs`: `core-web-vitals` + `typescript` presets).
+- `npm run test` — run the Vitest suite once (`vitest.config.ts`, Node environment, `@/*` alias).
+- `npm run test:watch` — Vitest in watch mode.
+- Single file / single test: `npx vitest run lib/geo.test.ts` / `npx vitest run -t "test name"`.
 
-No test runner is configured.
+Tests live next to their source as `*.test.ts`.
 
 ## Stack and configuration
 
